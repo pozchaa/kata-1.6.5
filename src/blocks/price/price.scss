@@ -1,0 +1,162 @@
+.price {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0 2em;
+}
+
+.price__caption {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1.55em;
+  padding-top: 0.3em;
+  padding-bottom: 1em;
+}
+
+.price__caption_right {
+  max-width: 538px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.price__caption-li_work {
+  max-width: 470px;
+  width: 100%;
+}
+
+.price__caption-li_qty {
+  max-width: 224px;
+  width: 100%;
+}
+
+.price__caption-li_time {
+  max-width: 314px;
+  width: 100%;
+}
+
+.price__caption-li {
+  font-family: 'TT Lakes Medium';
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #7e7e82;
+
+  opacity: 0.72;
+}
+
+.price__card {
+  padding: 0 1.55em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.price__card-body {
+  border-bottom: 1px solid #eaeaea;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4em;
+}
+
+.price__card:last-child .price__card-body {
+  border: none;
+}
+
+.price__card-li {
+  font-family: 'TT Lakes Medium';
+  font-size: 14px;
+  line-height: 18px;
+
+  letter-spacing: 0.2px;
+
+  color: #1b1c21;
+}
+
+.price__card-name {
+  max-width: 470px;
+  width: 100%;
+}
+
+.price__card-li_time {
+  position: absolute;
+  left: 228px;
+}
+
+.price__card-wrap {
+  max-width: 540px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.price__list {
+  background: #ffffff;
+  border-radius: 6px;
+  margin-bottom: 2.3em;
+}
+
+.price__card-btn {
+  width: 119px;
+  height: 32px;
+  background: #ff3e79;
+  border-radius: 16px;
+  border: none;
+
+  padding: 0.2em 1em;
+  padding-right: 2.5em;
+
+  font-family: 'TT Lakes Bold';
+  font-size: 12px;
+  line-height: 24px;
+  text-align: left;
+  letter-spacing: -0.15px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  background-image: url('/img/service-brands/right-arrow.svg');
+  background-repeat: no-repeat;
+  background-position: 95px center;
+  cursor: pointer;
+}
+
+.price__text {
+  max-width: 421px;
+  width: 100%;
+
+  font-family: 'TT Lakes Regular';
+  font-size: 14px;
+  line-height: 20px;
+  /* or 143% */
+
+  letter-spacing: 0.2px;
+
+  color: #1b1c21;
+  margin-bottom: 1em;
+}
+
+.price__link {
+  text-decoration: none;
+  font-family: 'TT Lakes Medium';
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: -0.2px;
+
+  color: #1b1c21;
+
+  max-width: 312px;
+  padding-right: 20px;
+  width: 100%;
+
+  background-image: url('/img/service-brands/right-arrow-active.svg');
+
+  background-repeat: no-repeat;
+  background-position: 300px center;
+}

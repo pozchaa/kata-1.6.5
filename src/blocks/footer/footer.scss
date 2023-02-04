@@ -1,0 +1,30 @@
+footer {
+  background: #f8f8f8;
+  border-top: 1px solid #d9fff5;
+  margin-top: 0.6em;
+  padding: 2em 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__text {
+  font-family: 'TT Lakes Regular';
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #7e7e82;
+
+  mix-blend-mode: normal;
+  opacity: 0.72;
+}
+
+.footer__center {
+  max-width: 220px;
+  width: 100%;
+}
+
+.footer__right {
+  max-width: 330px;
+  width: 100%;
+  text-align: right;
+}

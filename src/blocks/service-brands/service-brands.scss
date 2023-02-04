@@ -1,0 +1,136 @@
+.service {
+  box-sizing: border-box;
+}
+
+.service__body {
+  padding: 0 2em;
+  padding-bottom: 3.15em;
+}
+
+.service__title {
+  padding: 1em 2em;
+  font-family: 'TT Lakes Regular';
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+  color: #7e7e82;
+
+  margin-bottom: 1.55em;
+  background-color: #ffffff;
+  border-top: 1px solid #d9fff5;
+}
+
+.service__brands {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  column-gap: 2em;
+  height: 176px;
+  overflow: hidden;
+  transition: 0.4s;
+  margin-bottom: 0.5em;
+}
+
+.service__brands_active {
+  height: auto;
+}
+
+.service__brand {
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+
+  width: 100%;
+  height: 72px;
+  margin-bottom: 1em;
+  padding: 0 1em;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+
+  background-repeat: no-repeat;
+  background-position: 1em center;
+}
+
+.service__brand button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 100%;
+
+  background-color: rgba(0, 0, 0, 0);
+  background-position: center center;
+  background-image: url('/img/service-brands/Brand-Go.svg');
+  transition: 0.4s;
+
+  cursor: pointer;
+}
+
+.service__brand button:hover {
+  background-color: #ff3e79;
+  background-image: url('/img/service-brands/Brand-Go-active.svg');
+}
+
+.service__brand_lenovo {
+  background-image: url('/img/service-brands/Lenovo.svg');
+}
+
+.service__brand_samsung {
+  background-image: url('/img/service-brands/Samsung.png');
+}
+
+.service__brand_apple {
+  background-image: url('/img/service-brands/Apple.svg');
+}
+
+.service__brand_viewsonic {
+  background-image: url('/img/service-brands/ViewSonic.svg');
+}
+
+.service__brand_bosch {
+  background-image: url('/img/service-brands/Bosch.svg');
+}
+
+.service__brand_hp {
+  background-image: url('/img/service-brands/Hp.svg');
+  background-position: 0.6em center;
+}
+
+.service__brand_acer {
+  background-image: url('/img/service-brands/Acer.svg');
+}
+
+.service__brand_sony {
+  background-image: url('/img/service-brands/Sony.svg');
+}
+
+.service__brands-more {
+  width: 145px;
+  height: 24px;
+  border: none;
+
+  font-family: 'TT Lakes Medium';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #1b1c21;
+
+  transition: 0.5s ease-in-out;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url('/img/service-brands/bottom-arrow.svg');
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 0.51em;
+  margin-left: 7px;
+
+  cursor: pointer;
+}
+
+.service__brands-more_active {
+  background-image: url('/img/service-brands/bottom-arrow-active.svg');
+}
+
+/* .mySwiper {
+  display: none;
+} */

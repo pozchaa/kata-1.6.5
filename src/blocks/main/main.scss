@@ -1,0 +1,118 @@
+.main__body {
+  background: #f8f8f8;
+  border-top: 1px solid #d9fff5;
+}
+
+.main__content-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  background-image: url('/img/main/highlight.svg');
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.title__text {
+  font-family: 'TT Lakes Bold';
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+}
+
+.main__info_desktop-only {
+  display: none;
+}
+
+.main__img {
+  border-radius: 6px;
+  width: 100%;
+  height: 307px;
+  object-fit: cover;
+}
+
+.scroll-bar__block {
+  display: flex;
+  justify-content: space-between;
+  overflow-y: hidden;
+  width: 100%;
+}
+
+.scroll-bar__block::-webkit-scrollbar {
+  width: 0;
+}
+
+.scroll-bar__block::-moz-scrollbar {
+  width: 0;
+}
+
+.scroll-bar__item {
+  height: 2.5rem;
+  font-family: 'TT Lakes Regular';
+  font-size: 16px;
+  line-height: 24px;
+  white-space: nowrap;
+  letter-spacing: -0.2px;
+  color: #7e7e82;
+  border: 2px solid #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.scroll-bar__item a {
+  text-decoration: none;
+  color: #7e7e82;
+}
+
+.scroll-bar__item:hover,
+.scroll-bar__item:focus {
+  background: #ffffff;
+  border: 2px solid #b8ffec;
+  border-radius: 6px;
+}
+
+.scroll-bar__item a {
+  padding: 0.5em 1em;
+}
+
+.scroll-bar__block::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-bar__block::-moz-scrollbar {
+  width: 0;
+}
+
+.main__text {
+  font-family: 'TT Lakes Regular';
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  color: #1b1c21;
+}
+
+.main__text-more {
+  width: 132px;
+  height: 24px;
+  padding-left: 2em;
+  background-image: url('/img/main/bottom-arrow.svg');
+  background-size: 7.5px 10.3px;
+  background-repeat: no-repeat;
+  background-position: left center;
+
+  text-decoration: none;
+  font-family: 'TT Lakes DemiBold';
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #1b1c21;
+}
+
+.main__info-element a {
+  color: black;
+  text-decoration: none;
+}

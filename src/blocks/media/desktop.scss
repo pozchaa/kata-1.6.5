@@ -1,0 +1,104 @@
+@media screen and (max-width: 1312px) {
+  .price__card-li_time {
+    left: 190px;
+  }
+}
+
+@media screen and (max-width: 1215px) {
+  .price__caption-li_qty {
+    max-width: 167px;
+  }
+
+  .price__card-li_time {
+    left: 170px;
+  }
+}
+
+@media screen and (max-width: 1215px) {
+  .price__caption-li_qty {
+    max-width: 95px;
+  }
+
+  .price__card-li_time {
+    left: 95px;
+  }
+}
+
+.navigation {
+  display: none;
+}
+
+.main__body {
+  padding: 2.62em 0;
+}
+
+.title__body {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2.15em;
+  margin-bottom: 0.5em;
+}
+
+.main__info_desktop-only {
+  display: flex;
+}
+
+.main__info {
+  font-family: 'TT Lakes DemiBold';
+  font-size: 16px;
+  line-height: 24px;
+  text-align: right;
+  letter-spacing: -0.2px;
+
+  color: #1b1c21;
+}
+
+.main__info-element {
+  display: flex;
+  align-items: center;
+}
+
+.main__info .navigation__item {
+  margin-left: 0.7em;
+}
+
+.navigation__item-tools {
+  margin-right: 2em;
+}
+
+.scroll-bar__block {
+  overflow: visible;
+  flex-wrap: wrap;
+  padding: 0 2.35em;
+  margin-bottom: 0.62em;
+}
+
+.scroll-bar__item {
+  margin-bottom: 6px;
+}
+
+.scroll-bar__item:last-child {
+  margin-bottom: 0;
+}
+
+.main__content-block {
+  padding: 0 2.12em;
+  padding-bottom: 2.6em;
+}
+
+.main__text {
+  max-width: 490px;
+  line-height: 20px;
+  margin-bottom: 1.5em;
+}
+
+.main__text:last-child {
+  margin-bottom: 1em;
+}
+
+.main__img {
+  max-width: 531px;
+}
+.menu__btn {
+  display: none;
+}
