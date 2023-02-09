@@ -42,3 +42,12 @@
 
   cursor: pointer;
 }
+
+.service__technic button:hover {
+  background-color: #ff3e79;
+  background-image: url(/img/service-brands/Brand-Go-active.svg);
+}
+
+.price__card-title_mobile {
+  display: none;
+}

@@ -7,7 +7,13 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title></title>
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:767.98px)"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <title>1.6</title>
   </head>
   <body>
     <div class="container-all">
@@ -113,7 +119,7 @@
               <ul class="navigation__list navigation__block-left">
                 <li>
                   <button
-                    class="navigation__item navigation__item-menu"
+                    class="navigation__item navigation__item-menu header__burger"
                   ></button>
                 </li>
                 <div class="logo">
@@ -156,6 +162,89 @@
         </nav>
       </header>
       <div class="container">
+        <div class="feedback">
+          <div class="feedback__wrap">
+            <button class="feedback__close-btn"></button>
+            <div class="title feedback__title">
+              <div class="title__body">
+                <h1 class="title__text">Обратная связь</h1>
+              </div>
+            </div>
+            <form>
+              <input
+                class="feedback__input"
+                type="text"
+                placeholder="Имя"
+                size="20"
+                required
+              />
+
+              <input
+                id="phone"
+                class="feedback__input"
+                type="tel"
+                placeholder="Телефон"
+                required
+                pattern="[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$"
+              />
+
+              <input
+                id="mail"
+                class="feedback__input"
+                type="email"
+                id="mail"
+                name="mail"
+                placeholder="Электронная почта"
+                size="20"
+                required
+                minlength="8"
+              />
+
+              <textarea
+                class="feedback__input feedback__textarea"
+                placeholder="Сообщение"
+              ></textarea>
+
+              <p class="feedback__text">
+                Нажимая “отправить”, вы даете согласие на
+                <span>обработку</span> <span>персональных данных</span> и
+                соглашаетесь с нашей
+                <span>политикой конфиденциальности</span>
+              </p>
+
+              <button class="feedback__submit" type="submit">ОТПРАВИТЬ</button>
+            </form>
+          </div>
+        </div>
+        <div class="feedback feedback-phone">
+          <div class="feedback__wrap feedback-phone__wrap">
+            <button
+              class="feedback__close-btn feedback-phone__close-btn"
+            ></button>
+            <div class="title feedback__title">
+              <div class="title__body">
+                <h1 class="title__text">Заказать звонок</h1>
+              </div>
+            </div>
+            <form>
+              <input
+                id="phone"
+                class="feedback__input"
+                type="tel"
+                placeholder="Телефон"
+                required
+                pattern="[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$"
+              />
+              <p class="feedback__text">
+                Нажимая “отправить”, вы даете согласие на
+                <span>обработку</span> <span>персональных данных</span> и
+                соглашаетесь с нашей
+                <span>политикой конфиденциальности</span>
+              </p>
+              <button class="feedback__submit" type="submit">ОТПРАВИТЬ</button>
+            </form>
+          </div>
+        </div>
         <main>
           <div class="main__body">
             <div class="title">
@@ -180,12 +269,14 @@
             <div class="scroll-bar">
               <ul class="scroll-bar__block">
                 <li class="scroll-bar__item"
-                  ><a href="#">Ремонтируемые бренды</a></li
+                  ><a href="#service__brand">Ремонтируемые бренды</a></li
                 >
                 <li class="scroll-bar__item"
-                  ><a href="#">Ремонтируемые устройства</a></li
+                  ><a href="#service__technic">Ремонтируемые устройства</a></li
                 >
-                <li class="scroll-bar__item"><a href="#">Цены на услуги</a></li>
+                <li class="scroll-bar__item"
+                  ><a href="#service__price">Цены на услуги</a></li
+                >
                 <li class="scroll-bar__item"
                   ><a href="#">Адреса сервисных центров</a></li
                 >
@@ -215,9 +306,9 @@
                 <img class="main__img" src="./img/MG3223.png" alt="company" />
               </div>
             </section>
-            <section class="service">
+            <section id="service__brand" class="service">
               <h2 class="service__title">Ремонт техники различных брендов</h2>
-              <div class="service__body swiper mySwiper">
+              <div class="service__body swiper swiper__brands">
                 <ul class="service__brands swiper-wrapper">
                   <ul class="swiper-slide">
                     <li class="service__brand service__brand_lenovo"
@@ -279,7 +370,7 @@
                 <button class="service__brands-more">Показать все</button>
               </div>
             </section>
-            <section class="service">
+            <section id="service__technic" class="service">
               <h2 class="service__title">Ремонт различных видов техники</h2>
               <div class="service__body swiper mySwiper">
                 <ul class="service__brands swiper-wrapper">
@@ -321,7 +412,7 @@
                 <button class="service__brands-more">Показать все</button>
               </div>
             </section>
-            <section class="service">
+            <section id="service__price" class="service">
               <h2 class="service__title">цены на услуги</h2>
               <div class="price">
                 <ul class="price__caption">
@@ -337,84 +428,121 @@
                     >
                   </ul>
                 </ul>
-                <ul class="price__list">
-                  <ul class="price__card">
-                    <ul class="price__card-body">
-                      <li class="price__card-li price__card-name">Диагностика</li>
-                      <ul class="price__card-wrap">
-                        <li class="price__card-li">Бесплатно</li>
-                        <li class="price__card-li price__card-li_time"
-                          >20 мин</li
+                <div class="swiper__price swiper">
+                  <ul class="price__list swiper-wrapper">
+                    <ul class="price__card swiper-slide">
+                      <ul class="price__card-body">
+                        <li class="price__card-li price__card-name"
+                          ><h3 class="price__card-title_mobile"
+                            >Ремонтные услуги</h3
+                          ><p>Диагностика полифонического ануса</p></li
                         >
-                        <li class="price__card-li">
-                          <button class="price__card-btn">Заказать</button>
-                        </li>
+                        <ul class="price__card-wrap">
+                          <li class="price__card-li"
+                            ><h3 class="price__card-title_mobile">Цена</h3
+                            ><p>мильен</p></li
+                          >
+                          <li class="price__card-li price__card-li_time"
+                            ><h3 class="price__card-title_mobile">Срок</h3
+                            ><p>20 мин</p></li
+                          >
+                          <li class="price__card-li">
+                            <button class="price__card-btn">Заказать</button>
+                          </li>
+                        </ul>
+                      </ul>
+                    </ul>
+                    <ul class="price__card swiper-slide">
+                      <ul class="price__card-body">
+                        <li class="price__card-li price__card-name"
+                          ><h3 class="price__card-title_mobile"
+                            >Ремонтные услуги</h3
+                          ><p>Диагностика wadawdawd awdawda wad</p></li
+                        >
+                        <ul class="price__card-wrap">
+                          <li class="price__card-li"
+                            ><h3 class="price__card-title_mobile">Цена</h3
+                            ><p>Бесплатно</p></li
+                          >
+                          <li class="price__card-li price__card-li_time"
+                            ><h3 class="price__card-title_mobile">Срок</h3
+                            ><p>20 мин</p></li
+                          >
+                          <li class="price__card-li">
+                            <button class="price__card-btn">Заказать</button>
+                          </li>
+                        </ul>
+                      </ul>
+                    </ul>
+                    <ul class="price__card swiper-slide">
+                      <ul class="price__card-body">
+                        <li class="price__card-li price__card-name"
+                          ><h3 class="price__card-title_mobile"
+                            >Ремонтные услуги</h3
+                          ><p>Диагностика wadawdawd awdawda wad</p></li
+                        >
+                        <ul class="price__card-wrap">
+                          <li class="price__card-li"
+                            ><h3 class="price__card-title_mobile">Цена</h3
+                            ><p>Бесплатно</p></li
+                          >
+                          <li class="price__card-li price__card-li_time"
+                            ><h3 class="price__card-title_mobile">Срок</h3
+                            ><p>20 мин</p></li
+                          >
+                          <li class="price__card-li">
+                            <button class="price__card-btn">Заказать</button>
+                          </li>
+                        </ul>
+                      </ul>
+                    </ul>
+                    <ul class="price__card swiper-slide">
+                      <ul class="price__card-body">
+                        <li class="price__card-li price__card-name"
+                          ><h3 class="price__card-title_mobile"
+                            >Ремонтные услуги</h3
+                          ><p>Диагностика wadawdawd awdawda wad</p></li
+                        >
+                        <ul class="price__card-wrap">
+                          <li class="price__card-li"
+                            ><h3 class="price__card-title_mobile">Цена</h3
+                            ><p>Бесплатно</p></li
+                          >
+                          <li class="price__card-li price__card-li_time"
+                            ><h3 class="price__card-title_mobile">Срок</h3
+                            ><p>20 мин</p></li
+                          >
+                          <li class="price__card-li">
+                            <button class="price__card-btn">Заказать</button>
+                          </li>
+                        </ul>
+                      </ul>
+                    </ul>
+                    <ul class="price__card swiper-slide">
+                      <ul class="price__card-body">
+                        <li class="price__card-li price__card-name"
+                          ><h3 class="price__card-title_mobile"
+                            >Ремонтные услуги</h3
+                          ><p>Диагностика wadawdawd awdawda wad</p></li
+                        >
+                        <ul class="price__card-wrap">
+                          <li class="price__card-li"
+                            ><h3 class="price__card-title_mobile">Цена</h3
+                            ><p>Бесплатно</p></li
+                          >
+                          <li class="price__card-li price__card-li_time"
+                            ><h3 class="price__card-title_mobile">Срок</h3
+                            ><p>20 мин</p></li
+                          >
+                          <li class="price__card-li">
+                            <button class="price__card-btn">Заказать</button>
+                          </li>
+                        </ul>
                       </ul>
                     </ul>
                   </ul>
-                  <ul class="price__card">
-                    <ul class="price__card-body">
-                      <li class="price__card-li price__card-name">Замена дисплея</li>
-                      <ul class="price__card-wrap">
-                        <li class="price__card-li">1 000 ₽</li>
-                        <li class="price__card-li price__card-li_time"
-                          >20-120 мин</li
-                        >
-                        <li class="price__card-li">
-                          <button class="price__card-btn">Заказать</button>
-                        </li>
-                      </ul>
-                    </ul>
-                  </ul>
-                  <ul class="price__card">
-                    <ul class="price__card-body">
-                      <li class="price__card-li price__card-name"
-                        >Замена полифонического динамика</li
-                      >
-                      <ul class="price__card-wrap">
-                        <li class="price__card-li">10 000 ₽</li>
-                        <li class="price__card-li price__card-li_time"
-                          >20-120 мин</li
-                        >
-                        <li class="price__card-li">
-                          <button class="price__card-btn">Заказать</button>
-                        </li>
-                      </ul>
-                    </ul>
-                  </ul>
-                  <ul class="price__card">
-                    <ul class="price__card-body">
-                      <li class="price__card-li price__card-name"
-                        >Тестирование с выдачей технического заключения</li
-                      >
-                      <ul class="price__card-wrap">
-                        <li class="price__card-li">1 000 ₽</li>
-                        <li class="price__card-li price__card-li_time"
-                          >20-120 мин</li
-                        >
-                        <li class="price__card-li">
-                          <button class="price__card-btn">Заказать</button>
-                        </li>
-                      </ul>
-                    </ul>
-                  </ul>
-                  <ul class="price__card">
-                    <ul class="price__card-body">
-                      <li class="price__card-li price__card-name"
-                        >Замена программного обеспечения</li
-                      >
-                      <ul class="price__card-wrap">
-                        <li class="price__card-li">10 000 ₽</li>
-                        <li class="price__card-li price__card-li_time"
-                          >20-120 мин</li
-                        >
-                        <li class="price__card-li">
-                          <button class="price__card-btn">Заказать</button>
-                        </li>
-                      </ul>
-                    </ul>
-                  </ul>
-                </ul>
+                  <div class="swiper-pagination"></div>
+                </div>
                 <p class="price__text"
                   >Все цены указаны с учетом НДС. Стоимость ремонта указана на
                   единичную услугу. Для получения коммерческого предложения на

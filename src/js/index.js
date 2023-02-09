@@ -1,3 +1,6 @@
 import '../scss/style.scss'
-
-console.log('Works!')
+import './service'
+import './service-swiper'
+import './menu'
+import './check-inputs'
+import './feedback'

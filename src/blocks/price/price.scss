@@ -123,6 +123,16 @@
   background-repeat: no-repeat;
   background-position: 95px center;
   cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.price__card-btn:hover {
+  color: #ff3e79;
+  border: 1px solid #ff3e79;
+  background: white;
+  background-image: url(/img/service-brands/right-arrow-active.svg);
+  background-repeat: no-repeat;
+  background-position: 95px center;
 }
 
 .price__text {

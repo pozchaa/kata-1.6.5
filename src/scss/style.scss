@@ -1,12 +1,15 @@
 @import url(./reset.css);
 @import url(../blocks/header/header.scss);
 @import url(../blocks/main/main.scss);
+@import url(../blocks/feedback/feedback.scss);
 @import url(../blocks/service-brands/service-brands.scss);
 @import url(../blocks/service-technic/service-technic.scss);
 @import url(../blocks/menu/menu.scss);
 @import url(../blocks/price/price.scss);
 @import url(../blocks/footer/footer.scss);
 @import url(../blocks/media/desktop.scss);
+@import url(../blocks/media/tablet.scss);
+@import url(../blocks/swiper/swiper.scss);
 
 $bgColor: #ffffff;
 $text: #1b1c21;
@@ -64,10 +67,17 @@ body {
 }
 
 .container-all {
-  display: flex;
-  position: relative;
+  display: grid;
+  grid-template-columns: 308px 1fr;
 }
 
 .container {
+  position: relative;
   background: #f8f8f8;
+}
+
+@media screen and (max-width: 1024px) {
+  .container-all {
+    display: block;
+  }
 }
