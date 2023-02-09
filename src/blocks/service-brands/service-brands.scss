@@ -60,7 +60,7 @@
 
   background-color: rgba(0, 0, 0, 0);
   background-position: center center;
-  background-image: url('/../src/img/service-brands/Brand-Go.svg');
+  background-image: url('../img-css/service-brands/Brand-Go.svg');
   transition: 0.4s;
 
   cursor: pointer;
@@ -68,40 +68,40 @@
 
 .service__brand button:hover {
   background-color: #ff3e79;
-  background-image: url('/../src/img/service-brands/Brand-Go-active.svg');
+  background-image: url('../img-css/service-brands/Brand-Go-active.svg');
 }
 
 .service__brand_lenovo {
-  background-image: url('/../src/img/service-brands/Lenovo.svg');
+  background-image: url('../img-css/service-brands/Lenovo.svg');
 }
 
 .service__brand_samsung {
-  background-image: url('/../src/img/service-brands/Samsung.png');
+  background-image: url('../img-css/service-brands/Samsung.png');
 }
 
 .service__brand_apple {
-  background-image: url('/../src/img/service-brands/Apple.svg');
+  background-image: url('../img-css/service-brands/Apple.svg');
 }
 
 .service__brand_viewsonic {
-  background-image: url('/../src/img/service-brands/ViewSonic.svg');
+  background-image: url('../img-css/service-brands/ViewSonic.svg');
 }
 
 .service__brand_bosch {
-  background-image: url('/../src/img/service-brands/Bosch.svg');
+  background-image: url('../img-css/service-brands/Bosch.svg');
 }
 
 .service__brand_hp {
-  background-image: url('/../src/img/service-brands/Hp.svg');
+  background-image: url('../img-css/service-brands/Hp.svg');
   background-position: 0.6em center;
 }
 
 .service__brand_acer {
-  background-image: url('/../src/img/service-brands/Acer.svg');
+  background-image: url('../img-css/service-brands/Acer.svg');
 }
 
 .service__brand_sony {
-  background-image: url('/../src/img/service-brands/Sony.svg');
+  background-image: url('../img-css/service-brands/Sony.svg');
 }
 
 .service__brands-more {
@@ -118,7 +118,7 @@
 
   transition: 0.5s ease-in-out;
   background-color: rgba(0, 0, 0, 0);
-  background-image: url('/../src/img/service-brands/bottom-arrow.svg');
+  background-image: url('../img-css/service-brands/bottom-arrow.svg');
   background-repeat: no-repeat;
   background-position: left center;
   padding-left: 0.51em;
@@ -128,7 +128,7 @@
 }
 
 .service__brands-more_active {
-  background-image: url('/../src/img/service-brands/bottom-arrow-active.svg');
+  background-image: url('../img-css/service-brands/bottom-arrow-active.svg');
 }
 
 /* .mySwiper {
