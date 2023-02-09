@@ -28,23 +28,23 @@
 }
 
 .navigation__item-menu_active {
-  background-image: url('/img/menu/cross.svg');
+  background-image: url('/src/img/menu/cross.svg');
 }
 
 .navigation__item-menu_active:hover {
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url('/img/menu/cross-hover.svg');
+  background-image: url('/src/img/menu/cross-hover.svg');
 }
 
 .navigation__item-menu_search {
-  background-image: url('/img/menu/search-menu.svg');
+  background-image: url('/src/img/menu/search-menu.svg');
 }
 
 .navigation__item-menu_search:hover {
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url('/img/menu/search-menu-hover.svg');
+  background-image: url('/src/img/menu/search-menu-hover.svg');
 }
 
 .main-menu__body {
@@ -80,12 +80,12 @@
 
 .main-menu__item:hover {
   color: #7e7e82;
-  background-image: url('/img/menu/highlight-menu.svg');
+  background-image: url('/src/img/menu/highlight-menu.svg');
 }
 
 .main-menu__item_active {
   color: #7e7e82;
-  background-image: url('/img/menu/highlight-menu.svg');
+  background-image: url('/src/img/menu/highlight-menu.svg');
 }
 
 .main-menu__item:last-child {

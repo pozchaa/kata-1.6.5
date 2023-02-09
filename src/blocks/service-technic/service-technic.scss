@@ -37,7 +37,7 @@
 
   background-color: rgba(0, 0, 0, 0);
   background-position: center center;
-  background-image: url('/img/service-brands/Brand-Go.svg');
+  background-image: url('/src/img/service-brands/Brand-Go.svg');
   transition: 0.4s;
 
   cursor: pointer;
@@ -45,7 +45,7 @@
 
 .service__technic button:hover {
   background-color: #ff3e79;
-  background-image: url(/img/service-brands/Brand-Go-active.svg);
+  background-image: url('/src/img/service-brands/Brand-Go-active.svg');
 }
 
 .price__card-title_mobile {
