@@ -167,10 +167,10 @@
             <button class="feedback__close-btn"></button>
             <div class="title feedback__title">
               <div class="title__body">
-                <h1 class="title__text">Обратная связь</h1>
+                <h2 class="title__text">Обратная связь</h2>
               </div>
             </div>
-            <form>
+            <form class="feedback__form" onsubmit="return isValidForm()">
               <input
                 class="feedback__input"
                 type="text"
@@ -223,7 +223,7 @@
             ></button>
             <div class="title feedback__title">
               <div class="title__body">
-                <h1 class="title__text">Заказать звонок</h1>
+                <h2 class="title__text">Заказать звонок</h2>
               </div>
             </div>
             <form>
@@ -308,7 +308,7 @@
             </section>
             <section id="service__brand" class="service">
               <h2 class="service__title">Ремонт техники различных брендов</h2>
-              <div class="service__body swiper swiper__brands">
+              <div class="swiper__brands service__body swiper1 swiper">
                 <ul class="service__brands swiper-wrapper">
                   <ul class="swiper-slide">
                     <li class="service__brand service__brand_lenovo"
@@ -372,7 +372,7 @@
             </section>
             <section id="service__technic" class="service">
               <h2 class="service__title">Ремонт различных видов техники</h2>
-              <div class="service__body swiper mySwiper">
+              <div class="service__body swiper2 swiper swiper__technic">
                 <ul class="service__brands swiper-wrapper">
                   <ul class="swiper-slide">
                     <li class="service__technic">
@@ -428,7 +428,7 @@
                     >
                   </ul>
                 </ul>
-                <div class="swiper__price swiper">
+                <div class="swiper__price swiper3 swiper">
                   <ul class="price__list swiper-wrapper">
                     <ul class="price__card swiper-slide">
                       <ul class="price__card-body">

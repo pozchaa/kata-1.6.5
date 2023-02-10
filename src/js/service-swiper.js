@@ -1,36 +1,55 @@
+// let globalWidth = window.innerWidth
 
-
-let globalWidth = window.innerWidth
-
-if (globalWidth <= 767.9) {
-  var swiper = new Swiper('.mySwiper', {
-    slidesPerView: 'auto',
-    spaceBetween: 16,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true
+const swiper1 = new Swiper('.swiper__brands', {
+  enabled: false,
+  breakpoints: {
+    768: {
+      enabled: false
+    },
+    1: {
+      enabled: true
     }
-  })
-}
+  },
+  slidesPerView: 'auto',
+  spaceBetween: 16,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  }
+})
 
-if (globalWidth <= 767.9) {
-  var swiper = new Swiper('.swiper__brands', {
-    slidesPerView: 'auto',
-    spaceBetween: 16,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true
+const swiper2 = new Swiper('.swiper__technic', {
+  enabled: false,
+  breakpoints: {
+    768: {
+      enabled: false
+    },
+    1: {
+      enabled: true
     }
-  })
-}
+  },
+  slidesPerView: 'auto',
+  spaceBetween: 16,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  }
+})
 
-if (globalWidth <= 767.9) {
-  var swipers = new Swiper('.swiper__price', {
-    slidesPerView: 'auto',
-    spaceBetween: 16,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true
+const swiper3 = new Swiper('.swiper__price', {
+  enabled: false,
+  breakpoints: {
+    768: {
+      enabled: false
+    },
+    1: {
+      enabled: true
     }
-  })
-}
+  },
+  slidesPerView: 'auto',
+  spaceBetween: 16,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  }
+})

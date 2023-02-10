@@ -270,6 +270,11 @@ header {
     box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
   }
 
+  .menu_active {
+    left: 0;
+    visibility: visible;
+  }
+
   .menu__btn {
     display: block;
   }

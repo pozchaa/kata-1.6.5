@@ -11,6 +11,10 @@
   transition: 0.5s ease-in-out;
 }
 
+.feedback_open{
+  display: block;
+}
+
 .feedback-phone {
   height: 100vh;
 }
@@ -82,6 +86,7 @@
 .feedback__textarea {
   height: 118px;
   resize: none;
+  color: black;
 }
 
 .feedback__input:focus-visible {
@@ -120,7 +125,7 @@
 
   color: #ffffff;
 
-  background-image: url('/service-brands/right-arrow.svg');
+  background-image: url('../img-css/service-brands/right-arrow.svg');
   background-repeat: no-repeat;
   background-position: 115px center;
   cursor: pointer;
