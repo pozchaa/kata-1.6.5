@@ -8,19 +8,44 @@ const container = document.querySelector('.container')
 const header = document.querySelector('header')
 const menu = document.querySelector('.menu')
 
+///////////////////////////////////////
+
+function addLowOpacity(elements) {
+  elements.forEach(function (element) {
+    element.classList.add('low-opacity')
+  })
+}
+
+function removeLowOpacity(elements) {
+  elements.forEach(function (element) {
+    element.classList.remove('low-opacity')
+  })
+}
+
+/////////////////////////////////
+
+function addHidden(elements) {
+  elements.forEach(function (element) {
+    element.classList.add('add-hidden')
+  })
+}
+
+function removeHidden(elements) {
+  elements.forEach(function (element) {
+    element.classList.remove('add-hidden')
+  })
+}
+
 feedbackBtns.forEach(function (feedbackBtn) {
   feedbackBtn.addEventListener('click', function (e) {
     if (!feedbackBody.classList.contains('feedback_open')) {
       feedbackBody.classList.add('feedback_open')
     }
-    header.style.opacity = '0.3'
-    main.style.opacity = '0.3'
-    menu.style.opacity = '0.3'
+    addLowOpacity([header, main, menu])
+    addHidden([container, menu])
     container.style.height =
       feedbackBody.clientHeight - header.clientHeight + 'px'
-    container.style.overflow = 'hidden'
     menu.style.height = feedbackBody.clientHeight - header.clientHeight + 'px'
-    menu.style.overflow = 'hidden'
   })
 })
 
@@ -28,13 +53,10 @@ feedbackCloseBtn.addEventListener('click', function () {
   if (feedbackBody.classList.contains('feedback_open')) {
     feedbackBody.classList.remove('feedback_open')
   }
-  header.style.opacity = '1'
-  main.style.opacity = '1'
-  menu.style.opacity = '1'
+  removeLowOpacity([header, main, menu])
+  removeHidden([container, menu])
   container.style.height = 'auto'
-  container.style.overflow = 'visible'
   menu.style.height = 'auto'
-  menu.style.overflow = 'visible'
 })
 
 const feedbackPhoneBtns = document.querySelectorAll('.navigation__item-search')
@@ -45,13 +67,10 @@ feedbackPhoneBtns.forEach(function (feedbackPhoneBtn) {
     if (!feedbackPhoneBody.classList.contains('feedback_open')) {
       feedbackPhoneBody.classList.add('feedback_open')
     }
-    header.style.opacity = '0.3'
-    main.style.opacity = '0.3'
-    menu.style.opacity = '0.3'
+    addLowOpacity([header, main, menu])
+    addHidden([container, menu])
     container.style.height = feedbackPhoneBody.clientHeight + 'px'
-    container.style.overflow = 'hidden'
     menu.style.height = feedbackPhoneBody.clientHeight + 'px'
-    menu.style.overflow = 'hidden'
   })
 })
 
@@ -61,13 +80,10 @@ feedbackPhoneBody.children[0].children[0].addEventListener(
     if (feedbackPhoneBody.classList.contains('feedback_open')) {
       feedbackPhoneBody.classList.remove('feedback_open')
     }
-    header.style.opacity = '1'
-    main.style.opacity = '1'
-    menu.style.opacity = '1'
+    removeLowOpacity([header, main, menu])
+    removeHidden([container, menu])
     container.style.height = 'auto'
-    container.style.overflow = 'visible'
     menu.style.height = 'auto'
-    menu.style.overflow = 'visible'
   }
 )
 
@@ -78,13 +94,10 @@ main.addEventListener('click', function (e) {
       e.target.classList[1] != 'navigation__item-tools'
     ) {
       feedbackBody.classList.remove('feedback_open')
-      header.style.opacity = '1'
-      main.style.opacity = '1'
-      menu.style.opacity = '1'
+      removeLowOpacity([header, main, menu])
+      removeHidden([container, menu])
       container.style.height = 'auto'
-      container.style.overflow = 'visible'
       menu.style.height = 'auto'
-      menu.style.overflow = 'visible'
     }
   })
   feedbackPhoneBtns.forEach(function () {
@@ -94,13 +107,10 @@ main.addEventListener('click', function (e) {
     ) {
       console.log(1234)
       feedbackPhoneBody.classList.remove('feedback_open')
-      header.style.opacity = '1'
-      main.style.opacity = '1'
-      menu.style.opacity = '1'
+      removeLowOpacity([header, main, menu])
+      removeHidden([container, menu])
       container.style.height = 'auto'
-      container.style.overflow = 'visible'
       menu.style.height = 'auto'
-      menu.style.overflow = 'visible'
     }
   })
 })
@@ -119,17 +129,18 @@ menuFeedbackBtn.addEventListener('click', function (e) {
   if (!feedbackBody.classList.contains('feedback_open')) {
     feedbackBody.classList.add('feedback_open')
   }
-  header.style.opacity = '0.3'
-  main.style.opacity = '0.3'
-  menu.style.opacity = '0.3'
-  container.style.opacity = '1'
+  addLowOpacity([header, main, menu])
+  removeLowOpacity([container])
+  addHidden([container])
   container.style.height =
     feedbackBody.clientHeight - header.clientHeight + 'px'
-  container.style.overflow = 'hidden'
   if (globalWidth <= 767.97) {
+    if (menu.classList.contains('menu_active')) {
+      menu.classList.remove('menu_active')
+    }
+    removeHidden([container])
     menu.style.height = feedbackBody.clientHeight - header.clientHeight + 'px'
-    menu.style.left = '-1000px'
-    menu.style.overflow = 'hidden'
+    addHidden([menu])
   }
 })
 
@@ -137,18 +148,16 @@ menuFeedbackPhoneBtn.addEventListener('click', function (e) {
   if (!feedbackPhoneBody.classList.contains('feedback_open')) {
     feedbackPhoneBody.classList.add('feedback_open')
   }
-  header.style.opacity = '0.3'
-  main.style.opacity = '0.3'
-  menu.style.opacity = '0.3'
-  container.style.opacity = '1'
+  addLowOpacity([header, main, menu])
+  removeLowOpacity([container])
+  addHidden([container])
   container.style.height = feedbackPhoneBody.clientHeight + 'px'
-  container.style.overflow = 'hidden'
   if (globalWidth <= 767.97) {
+    if (menu.classList.contains('menu_active')) {
+      menu.classList.remove('menu_active')
+    }
     menu.style.height = feedbackPhoneBody.clientHeight + 'px'
-    menu.style.overflow = 'hidden'
-    menu.style.left = '-1000px'
-    menu.style.visibility = 'hidden'
+    removeHidden([container])
+    addHidden([menu])
   }
 })
-
-

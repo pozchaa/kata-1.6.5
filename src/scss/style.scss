@@ -1,18 +1,5 @@
 @import url(./reset.css);
-@import url(../blocks/header/header.scss);
-@import url(../blocks/main/main.scss);
-@import url(../blocks/feedback/feedback.scss);
-@import url(../blocks/service-brands/service-brands.scss);
-@import url(../blocks/service-technic/service-technic.scss);
-@import url(../blocks/menu/menu.scss);
-@import url(../blocks/price/price.scss);
-@import url(../blocks/footer/footer.scss);
-@import url(../blocks/media/desktop.scss);
-@import url(../blocks/media/tablet.scss);
-@import url(../blocks/swiper/swiper.scss);
 
-$bgColor: #ffffff;
-$text: #1b1c21;
 
 @font-face {
   font-family: 'TT Lakes Light';
@@ -82,17 +69,25 @@ body {
 }
 
 .none-scroll {
-  overflow: -moz-scrollbars-none !important;
-  -ms-overflow-style: none !important;
-  scrollbar-width: none !important;
-  overflow-y: scroll !important;
-  scrollbar-width: none !important; 
-  -ms-overflow-style: none !important;
+	overflow: -moz-scrollbars-none !important;
+	-ms-overflow-style: none !important;
+	scrollbar-width: none !important;
+	overflow-y: scroll !important;
+	scrollbar-width: none !important;
+	-ms-overflow-style: none !important;
+	&::-webkit-scrollbar {
+		width: 0 !important;
+		height: 0 !important;
+		display: none !important;
+	}
 }
-.none-scroll::-webkit-scrollbar {
-  width: 0 !important;
-  height: 0 !important;
-  display: none !important;
+
+.low-opacity {
+  opacity: 0.3;
+}
+
+.add-hidden {
+  overflow: hidden;
 }
 
 @media screen and (max-width: 1024px) {
