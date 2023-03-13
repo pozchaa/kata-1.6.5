@@ -6,11 +6,15 @@ serviceMoreBtns.forEach(function (serviceMoreBtn) {
     if (!e.target.classList.contains('service__brands-more_active')) {
       e.target.classList.add('service__brands-more_active')
       e.target.innerText = 'Скрыть'
-      e.path[1].children[0].classList.add('service__brands_active')
+      serviceMoreBtn.parentNode.childNodes[1].classList.add(
+        'service__brands_active'
+      )
     } else {
       e.target.classList.remove('service__brands-more_active')
       e.target.innerText = 'Показать все'
-      e.path[1].children[0].classList.remove('service__brands_active')
+      serviceMoreBtn.parentNode.childNodes[1].classList.remove(
+        'service__brands_active'
+      )
     }
   })
 })

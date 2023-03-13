@@ -35,8 +35,9 @@ function removeHidden(elements) {
 menuBtn.addEventListener('click', function () {
   if (!menu.classList.contains('menu_active')) {
     menu.classList.add('menu_active')
+    body.style.position = 'fixed'
   }
-  addLowOpacity([header,container])
+  addLowOpacity([header, container])
   container.style.height = menu.clientHeight - header.clientHeight + 'px'
   menu.classList.add('none-scroll')
   body.classList.add('none-scroll')
@@ -45,15 +46,16 @@ menuBtn.addEventListener('click', function () {
 menuBtnClose.addEventListener('click', function () {
   if (menu.classList.contains('menu_active')) {
     menu.classList.remove('menu_active')
+    body.style.position = 'static'
   }
-  removeLowOpacity([header,container])
+  removeLowOpacity([header, container])
   removeHidden(container)
 })
 
 main.addEventListener('click', function (e) {
   if (menu.classList.contains('menu_active')) {
     menu.classList.remove('menu_active')
-    removeLowOpacity([header,main,container])
+    removeLowOpacity([header, main, container])
     container.style.height = 'auto'
     menu.style.height = 'auto'
     removeHidden(menu)

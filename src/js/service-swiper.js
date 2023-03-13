@@ -1,7 +1,6 @@
 import Swiper, { Navigation, Pagination } from 'swiper'
 
-
-const swiper1 = new Swiper('.swiper__brands', {
+const swiperBrands = new Swiper('.swiper__brands', {
   modules: [Navigation, Pagination],
   enabled: false,
   breakpoints: {
@@ -20,7 +19,7 @@ const swiper1 = new Swiper('.swiper__brands', {
   }
 })
 
-const swiper2 = new Swiper('.swiper__technic', {
+const swiperTechnic = new Swiper('.swiper__technic', {
   modules: [Navigation, Pagination],
   enabled: false,
   breakpoints: {
@@ -39,7 +38,7 @@ const swiper2 = new Swiper('.swiper__technic', {
   }
 })
 
-const swiper3 = new Swiper('.swiper__price', {
+const swiperPrice = new Swiper('.swiper__price', {
   modules: [Navigation, Pagination],
   enabled: false,
   breakpoints: {
@@ -57,7 +56,6 @@ const swiper3 = new Swiper('.swiper__price', {
     clickable: true
   }
 })
-
 
 // let globalWidth = window.innerWidth
 

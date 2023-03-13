@@ -90,8 +90,14 @@ body {
   overflow: hidden;
 }
 
+.scroll-bar__block {
+  scrollbar-width: none;
+}
+
 @media screen and (max-width: 1024px) {
   .container-all {
     display: block;
   }
 }
+
+
